@@ -2,7 +2,7 @@
   background: rgb(0, 0, 0);
   color: white;
 }
-.footer-container  {
+.footer-container {
   max-width: 1200px;
   padding: 120px 20px 10px;
   margin: 0 auto;
@@ -23,10 +23,23 @@
   color: #c3c3c3;
   line-height: 1.4;
 }
-.footer-copy{
+.footer-copy {
   color: #636161;
   margin-bottom: 20px;
-font-size: 1.125rem;
-
+  font-size: 1.125rem;
 }
 
+@media (max-width: 800px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .footer-container{
+    gap: 50px;
+  }
+  .footer-container ul li {
+    font-size: 1.275rem;
+    margin-bottom: 10px;
+  }
+}
